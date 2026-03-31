@@ -87,7 +87,7 @@ export default function Profile() {
     </Card>
   );
 }
-*/
+
 function Child(props) {
   return (
     <div>
@@ -96,7 +96,7 @@ function Child(props) {
     </div>
   );
 }
-/*
+
 import { useState } from "react";
 
 function App() {
@@ -173,7 +173,7 @@ function App(){
     </div>
   );
 }
-export default App;*/
+export default App;
 
 import React, { useState } from "react";
 import Child from "./child";
@@ -194,4 +194,29 @@ function App() {
 }
 
 export default App;
+
+function ListItem(props) {
+  return <li>{props.animal}</li>
+}
+
+function List(props) {
+  return (
+    <ul>
+      {props.animals.map((animal) => {
+        return <ListItem key={animal} animal={animal} />;
+      })}
+    </ul>
+  );
+}
+
+function App() {
+  const animals = ["Lion", "Cow", "Snake", "Lizard"];
+
+  return (
+    <div>
+      <h1>Animals: </h1>
+      <List animals={animals} />
+    </div>
+  );
+}export default App;*/
 

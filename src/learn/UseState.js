@@ -105,4 +105,14 @@ function TodoApp() {
     </div>
   );
 }
-export default TodoApp;*/
+export default TodoApp;
+import React, {useState} from "react";
+function Counter(){
+  const[count, setCount]= useState(0);
+  return(
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={()=>setCount(count + 1)}>Click Me</button>
+    </div>
+  );
+}*/
